@@ -7,17 +7,13 @@
 
 - Apr. 2016, BSc in Mathmatics (with Distinction), Simon Fraser University
 
-* Publications
-
-* Preprints
-
 * Teaching
 - York University
   - TA for Math 1200 (Introduction to Proofs)
   - TA for Math 3021 (Abstract Algebra I)
   - TA for Math 3022 (Abstract Algebra II)
 - University of Waterloo
-  - TA for Math 135 (Introduction to Proofs)
+  - TA for Math 135 (Algebra for Honours Mathematics)
   - TA for Math 235 (Introduction to Combinatorics)
 
 * Services

@@ -10,12 +10,15 @@
     <title>{{ block "title" . }} {{ .Title }} {{ end }}</title>
 
 
-    <!-- katex for math -->
-    {{ partial "katex.html" }}
+    <!-- static (does not require processing) -->
+    <link rel="stylesheet" href="/libs/bootstrap-4.0.0-dist/css/bootstrap.css" />
 
-    <!-- stylesheets -->
+    <!-- assets (requires processing) -->
     {{ $style := resources.Get "scss/style.scss" | toCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+    <!-- katex for math -->
+    {{ partial "katex.html" }}
   </head>
   <body>
     <!-- header -->

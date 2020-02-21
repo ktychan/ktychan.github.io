@@ -1,3 +1,0 @@
-#+title: Diagrams and Polarization
-#+weight: 2
-
