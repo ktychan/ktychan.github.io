@@ -1,0 +1,26 @@
+#+title: Curriculum vitae
+
+* Education
+- /In progress (since 2018)/, PhD Mathematics, York University
+- Aug. 2018, MMath in Combinatorics and Optimization, University of Waterloo \\
+  Thesis: [[https://uwspace.uwaterloo.ca/handle/10012/13601][Induction Relations in the Symmetric Groups and Jucys-Murphy Elements]]
+
+- Apr. 2016, BSc in Mathmatics (with Distinction), Simon Fraser University
+
+* Publications
+
+* Preprints
+
+* Teaching
+- York University
+  - TA for Math 1200 (Introduction to Proofs)
+  - TA for Math 3021 (Abstract Algebra I)
+  - TA for Math 3022 (Abstract Algebra II)
+- University of Waterloo
+  - TA for Math 135 (Introduction to Proofs)
+  - TA for Math 235 (Introduction to Combinatorics)
+
+* Services
+- York University
+  - Coordinator of Math/Stat Lab (a tutorial centre for first and second year courses)
+  - Co-organizer of student run seminar /Left To The Reader/

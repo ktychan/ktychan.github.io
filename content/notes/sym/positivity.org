@@ -1,0 +1,11 @@
+#+title: Positivity Relations
+
+* $s$-positive
+By Littlewood-Richardson rule, all skew Schur functions are Schur
+positive.  It follows that $e_{\lambda}$ and $h_{\lambda}$ are both
+Schur positive since they are skew shapes.
+
+* $e$-positive
+Vertical strip LLT polynomials $\mathbb{L}_{\bm{\nu}}(X;q+1)$ are
+Schur.  This was proved by D'Addario and its proof uses the Dyck path
+operators.

@@ -1,0 +1,29 @@
+#+title: Macdonald Polynomial
+
+* Introduction
+Let $\Lambda$ to be the usual ring of symmetric functions over
+$\mathbb{Q}$.  We work in the ring $\Lambda \otimes \mathbb{Q}(q,t)$ of
+symmetric function over the field of rational functions
+$\mathbb{Q}(q,t)$.  Macdonald polynomials are a family of orthogonal
+polynomials.
+
+** Basic Identities
+The modified Macdonald polynomial has a simply $q,t$-symmetric: For
+any partition $\mu$
+\[
+\tilde{H}_{\mu'}(q,t;\bm{z}) = \tilde{H}_{\mu}(t,q;\bm{z}).
+\]
+This is derived from the identity
+\[
+q^{n(\mu)}t^{n(\mu)} \tilde{H}_{\mu}(q^{-1};t^{-1};\bm{z}) = \tilde{H}_{\mu}(q,t;\bm{z}).
+\]
+
+* Nabla and Delta Operators
+We encode a partition $\mu$ as a polynomial $B_{\mu} = \sum_{(a,b) \in
+\mu} q^{a}t^{b}$.  Define a family of eigenoperators $\Delta_{f}:
+\Lambda \otimes \mathbb{Q}(q,t) \to \Lambda \otimes \mathbb{Q}(q,t)$ indexed by
+symmetric function $f \in \Lambda$ by \[ \Delta_{f} \tilde{H}_{\mu} =
+f[B_{\mu}] \tilde{H}_{\mu}.  \]
+
+Nabla is the special case $\nabla = \Delta_{e_{n}}$.
+

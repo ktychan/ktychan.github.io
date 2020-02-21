@@ -1,0 +1,7 @@
+#+title: Hallo!
+#+date: 2020-02-20
+
+My name is Kelvin Chan and I am a second year PhD Student at York
+University. My research area is algebraic combinatorics. I am
+interested in exploring and understanding combinatorial underpinning
+of objects coming from representation theory.

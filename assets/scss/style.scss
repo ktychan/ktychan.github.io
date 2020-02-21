@@ -1,0 +1,108 @@
+// Bootstrap
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css");
+
+// Font
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=greek,greek-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:300,400,500,600,700&display=swap&subset=greek,greek-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=greek,greek-ext,latin-ext");
+@import url("https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css");
+
+$black: #212529;
+$font-family-base: "Roboto", Arial, sans-serif, -apple-system;
+$font-family-serif: "Lora", Arial, sans-serif, -apple-system;
+$font-family-mono: "Fira Code", monospace;
+$line-height-base: 1.4;
+$font-family-math: "Open Sans", sans-serif, -apple-system;
+
+// Global
+body {
+  font-family: Roboto, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $black;
+}
+
+.bd-navbar {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  min-height: 2rem;
+  background-color: indigo;
+  a {
+    color: blue;
+  }
+}
+
+.bd-sidebar {
+  padding-top: 2rem;
+  font-size: 0.875rem;
+}
+
+.bd-toc {
+  position: sticky;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.bd-content {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+article {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: larger;
+
+  .katex {
+    font-size: 1em;
+  }
+}
+
+.homepage {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: lighter;
+  padding-top: 3rem;
+
+  h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: large;
+  }
+}
+
+/* hardcopy */
+@media print {
+  @page {
+    size: auto;
+    margin: 1in;
+  }
+
+  article {
+    width: unset;
+    margin: 0in;
+    font-family: "Computer Modern Serif", serif;
+    font-size: 10pt;
+    text-align: justify;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 14pt;
+  }
+
+  h2 {
+    font-size: 10pt;
+  }
+}
