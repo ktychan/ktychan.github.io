@@ -1,22 +1,31 @@
-#+title: Curriculum vitae
+#+title: Curriculum Vitae
 
 * Education
-- /In progress (since 2018)/, PhD Mathematics, York University
-- Aug. 2018, MMath in Combinatorics and Optimization, University of Waterloo \\
-  Thesis: [[https://uwspace.uwaterloo.ca/handle/10012/13601][Induction Relations in the Symmetric Groups and Jucys-Murphy Elements]]
+- *York University*, Toronto, Ontario, Canada
+  + /In progress (since Sep. 2018) PhD/ in Mathematics.
+- *University of Waterloo*, Waterloo, Ontario, Canada
+  + /MMath/ in Combinatorics and Optimization, Aug. 2018. \\
+    Thesis: [[https://uwspace.uwaterloo.ca/handle/10012/13601][Induction Relations in the Symmetric Groups and Jucys-Murphy Elements]].
 
-- Apr. 2016, BSc in Mathmatics (with Distinction), Simon Fraser University
+- *Simon Fraser University*, Burnaby, British Columbia, Canada
+  + /BSc/ in Mathematics (with Distinction), Apr. 2016.
 
-* Teaching
-- York University
+* Teaching Experiences
+- *York University*
   - TA for Math 1200 (Introduction to Proofs)
-  - TA for Math 3021 (Abstract Algebra I)
-  - TA for Math 3022 (Abstract Algebra II)
-- University of Waterloo
+    + responsible for grading and running weekly tutorials.
+    + I have been TA'ing this course every semester since Sep. 2018.
+  - TA for Math 3021 and 3022 (Abstract Algebra I and II)
+    + responsible for grading.
+    + occasionally cover for lectures.
+    + I have been TA'ing this sequence every year since Sep. 2018.
+- *University of Waterloo*
   - TA for Math 135 (Algebra for Honours Mathematics)
+    + responsible for grading and holding tutorial centre hours.
+    + occasionally cover for lectures.
   - TA for Math 235 (Introduction to Combinatorics)
-
+    + responsible for grading and teaching weekly tutorials.
 * Services
-- York University
+- *York University*
   - Coordinator of Math/Stat Lab (a tutorial centre for first and second year courses)
   - Co-organizer of student run seminar /Left To The Reader/
