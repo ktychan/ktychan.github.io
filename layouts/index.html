@@ -1,12 +1,13 @@
-{{ define "title" }} {{ .Site.Title }} {{ end }} 
+{{ define "title" }} {{ .Site.Title }} {{ end }}
 
 {{ define "main" }}
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-11 col-md-10 col-lg-8 homepage">
-      <h1>{{ .Title }}</h1>
-
+    <div class="col-md-4 profile-pic">
       <img src="/imgs/profile.jpeg" class="profile-pic" />
+    </div>
+    <div class="col-md-6 homepage">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
   </div>

@@ -1,18 +1,1 @@
 {{ define "title" }} {{ .Title }} &ndash; {{ .Site.Title }} {{ end }}
-
-{{ define "sidebar" }}
-<ul>
-  {{ range .Pages }}
-  <li>
-    <a href="{{.Permalink}}">{{.Title}}</a>
-    <ul>
-      {{ range .Pages }}
-      <li>
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </li>
-      {{ end }}
-    </ul>
-  </li>
-  {{ end }}
-</ul>
-{{ end }}
