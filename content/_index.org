@@ -1,7 +1,7 @@
 #+title: Hello!
-#+date: 2020-02-20
+#+date: 2021-01-14
 
-My name is Kelvin Chan and I am a second year PhD Student at York
+My name is Kelvin Chan and I am a third year PhD Student at York
 University. My research focus on algebraic and enumerative combinatorics. I am
 interested in exploring and understanding combinatorial underpinning
 of objects coming from representation theory.
