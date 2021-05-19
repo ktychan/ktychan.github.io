@@ -1,5 +1,5 @@
 #+title: Hello!
-#+date: 2021-01-14
+#+date: 2021-05-19
 
 My name is Kelvin Chan and I am a third year PhD Student at York
 University. My research focus on algebraic and enumerative combinatorics. I am
@@ -9,3 +9,6 @@ of objects coming from representation theory.
 **** Contacts:
 - Email: ktychan😄yorku.ca
 - Office: DB 2037
+
+**** Math 1200 (Summer 2021)
+For LaTeX tutorial, click [[https://ktychan.gitlab.io/teaching/1200-latex/][here]].
