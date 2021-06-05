@@ -1,3 +1,18 @@
+# MacOS
 .DS_Store
+
+# Emacs
+**/auto/*.el
+
+# LaTeX junk
+src/**/*.aux
+src/**/*.log
+src/**/*.out
+src/**/*.pdf
+src/**/*.synctex.gz
+src/**/*.toc
+src/**/*.tex
+
+# not sure what's going on
 public
 resources
