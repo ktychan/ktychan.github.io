@@ -1,10 +1,22 @@
-# MacOS
+### MacOS
+#
 .DS_Store
 
-# Emacs
+
+### Emacs
+#
 **/auto/*.el
 
-# LaTeX junk
+
+### hugo
+# these two are produced by running 'hugo' in CLI
+#
+public
+resources
+
+
+### LaTeX junk
+#
 src/**/*.aux
 src/**/*.log
 src/**/*.out
@@ -12,7 +24,3 @@ src/**/*.pdf
 src/**/*.synctex.gz
 src/**/*.toc
 src/**/*.tex
-
-# not sure what's going on
-public
-resources

@@ -1,15 +1,24 @@
-{{ define "title" }} {{ .Site.Title }} {{ end }}
+{{ define "title" }} Kelvin Chan {{ end }} {{ define "main" }}
+<article class="landing">
+  <h1 id="title">Kelvin T. Y. Chan</h1>
 
-{{ define "main" }}
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-4 profile-pic">
-      <img src="/imgs/profile.jpeg" class="profile-pic" />
+  <section id="abstract">
+    <div id="bio">
+      <p>
+        <emph style="font-size: x-large">Hallo!</emph> I am a third-year
+        mathematics Ph.D. student at York University. My research focuses on
+        algebraic and enumerative combinatorics. I am interested in
+        understanding and exploring the combinatorial underpinning of objects
+        coming from representation theory of the symmetric groups and its
+        analogues.
+      </p>
     </div>
-    <div class="col-md-6 homepage">
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
+
+    <div id="profile-picture">
+      <img src="/imgs/profile.jpeg" />
     </div>
-  </div>
-</div>
+  </section>
+
+  {{ .Content }}
+</article>
 {{ end }}

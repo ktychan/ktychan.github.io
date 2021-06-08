@@ -1,5 +1,5 @@
-#+title: Curriculum Vitae
-#+date: 2021-01-14
+#+title: CV
+#+weight: 10
 
 * Education
 - *York University*, Toronto, Ontario, Canada
@@ -26,6 +26,7 @@
     + occasionally cover for lectures.
   - TA for Math 235 (Introduction to Combinatorics)
     + responsible for grading and teaching weekly tutorials.
+
 * Services
 - *York University*
   - Coordinator of Math/Stat Lab (a tutorial centre for first and second year courses)

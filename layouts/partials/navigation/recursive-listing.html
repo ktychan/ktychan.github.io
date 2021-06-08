@@ -1,0 +1,19 @@
+<!-- recursively list all subsections and it's pages -->
+
+{{ if gt (len .Sections) 0 }}
+<!--  -->
+{{ range .Sections }}
+<!--  -->
+{{ partial "navigation/recursive-listing.html" .CurrentSection }}
+<!--  -->
+{{ end }}
+<!--  -->
+{{ else }}
+<ul>
+  {{ range .CurrentSection.Pages }}
+  <li>
+    <a href="{{.Permalink}}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
