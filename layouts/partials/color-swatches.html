@@ -1,0 +1,40 @@
+<style>
+  /* for color testing */
+  .color-swatches {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    .colour-swatch {
+      width: 50px;
+      height: 50px;
+      border: thin dotted;
+      margin: 10px;
+    }
+
+    .light-shade {
+      background-color: $colour-light-shade;
+    }
+    .light-accent {
+      background-color: $colour-light-accent;
+    }
+    .main {
+      background-color: $colour-main;
+    }
+    .dark-accent {
+      background-color: $colour-dark-accent;
+    }
+    .dark-shade {
+      background-color: $colour-dark-shade;
+    }
+  }
+</style>
+
+<!-- for testing colour schemes -->
+<div class="color-swatches">
+  <div class="colour-swatch light-shade"></div>
+  <div class="colour-swatch light-accent"></div>
+  <div class="colour-swatch main"></div>
+  <div class="colour-swatch dark-accent"></div>
+  <div class="colour-swatch dark-shade"></div>
+</div>

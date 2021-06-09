@@ -1,15 +1,18 @@
 /* fonts */
 @import "./reset";
+@import "./colours";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* variables */
-$black: #212529;
-$font-family-base: "Roboto", sans-serif, -apple-system;
-$font-family-article: "Open Sans", sans-serif, -apple-system;
+$font-family-base: "Roboto", sans-serif;
+$font-family-heading: "Roboto Slab", serif;
+$font-family-article: "Open Sans", sans-serif;
 $font-family-monospace: "Fira Code", monospace;
 
+/* sizing */
 $navbar-height: 3rem;
 
 /* global */
@@ -44,17 +47,15 @@ nav {
   margin: 0;
   width: 100%;
   height: $navbar-height;
-  background-color: lightgrey;
 
   a {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-weight: 300;
 
     text-decoration: none;
 
     line-height: $navbar-height;
     height: $navbar-height;
-    color: black;
     margin-left: 1rem;
 
     @media screen and (max-width: 600px) {
@@ -89,33 +90,36 @@ nav {
 /*              */
 /* ------------ */
 
-h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: xx-large;
-}
 h1,
 #title {
+  font-family: $font-family-heading;
+  text-align: center;
   font-size: xx-large;
-  font-weight: 400;
   margin: 1em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+h6 {
+  font-family: $font-family-heading;
+  color: $colour-main;
 }
 
 h2 {
   font-size: x-large;
-  font-weight: 400;
 }
 
 h3 {
   font-size: larger;
-  font-weight: 400;
 }
 
 h4,
 h5,
 h6 {
   font-size: normal;
-  font-weight: 400;
   display: inline;
 }
 
@@ -129,7 +133,6 @@ ul {
 
 article {
   font-family: $font-family-article;
-  font-weight: 300;
   line-height: 1.25;
 
   p {
@@ -141,7 +144,6 @@ article {
     width: 50%;
     margin: auto;
     font-size: normal;
-    font-weight: 300;
   }
 
   #toc {
@@ -210,7 +212,8 @@ article {
 
     #bio {
       padding: 1rem;
-      flex-basis: 500px;
+      flex-basis: 600px;
+      text-align: justify;
       p {
         line-spacing: 1.25;
         font-size: 14pt;

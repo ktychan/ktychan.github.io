@@ -1,0 +1,47 @@
+$colour-light-shade: #edf2ec;
+$colour-light-accent: #86ae96;
+$colour-main: #249b98;
+$colour-dark-accent: #646f77;
+$colour-dark-shade: #1e2430;
+
+$colour-primary: $colour-main;
+$colour-info: $colour-dark-shade;
+$colour-success: #579c59;
+$colour-warning: #d48c21;
+$colour-danger: #f44336;
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: $colour-light-shade;
+    color: $colour-dark-shade;
+  }
+
+  nav {
+    background-color: $colour-main;
+    a {
+      color: $colour-light-shade;
+    }
+  }
+
+  a {
+    color: $colour-light-accent;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $colour-dark-shade;
+    color: $colour-light-shade;
+  }
+
+  nav {
+    background-color: $colour-main;
+    a {
+      color: $colour-dark-shade;
+    }
+  }
+
+  a {
+    color: $colour-dark-accent;
+  }
+}
