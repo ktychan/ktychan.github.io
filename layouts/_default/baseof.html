@@ -6,8 +6,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!-- prettier-ignore -->
     <title>
-      {{ block "title" . }} {{ .Site.Title }} - {{ .Title }} {{ end }}
+      {{ block "title" . }}
+        {{ if .IsHome }}
+          {{ .Site.Title }}
+        {{ else }}
+          {{ .Site.Title }} - {{ .Title }}
+        {{ end }}
+      {{ end }}
     </title>
 
     <!-- resources that requires pre-processing -->
@@ -18,17 +26,29 @@
     <!-- main -->
     {{ block "container" . }}
     <main>
-      <div class="container">{{ block "main" . }} {{ .Content }} {{ end }}</div>
+      <!-- prettier-ignore -->
+      <div class="container">
+        {{ block "main" . }}
+         {{ .Content }}
+        {{ end }}
+      </div>
     </main>
     {{ end }}
 
     <!-- nav -->
     {{ block "navbar" . }}
     <nav>
-      <a href="/" class="logo">{{ .Site.Title }}</a>
+      <a href="/" class="logo"> {{ .Site.Title }} </a>
 
       {{ range .Site.Home.CurrentSection.Pages }}
-      <a href="{{.Permalink }}">{{ .Title }}</a>
+      <!-- prettier-ignore -->
+      <a href="{{.Permalink }}">
+        {{ if .Params.short_title  }}
+          {{ .Params.short_title }}
+        {{ else}}
+          {{ .Title }}
+        {{ end }}
+      </a>
       {{ end }}
     </nav>
     {{ end }}

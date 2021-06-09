@@ -2,8 +2,8 @@
 #+date: 2021-06-05
 
 * Contacts
-- Email: ktychan😄yorku.ca
-- Office: DB 2037
+- Email: ktychan 😄 yorku 🍁 ca
+- Office: [[https://goo.gl/maps/ZP8M6yVMYWjFfMSn9][DB 2037]]
 
 * Math 1200 (Summer 2021)
 For LaTeX tutorial, click [[https://ktychan.gitlab.io/teaching/1200-latex/][here]].
