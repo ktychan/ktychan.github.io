@@ -1,6 +1,5 @@
 #+title: Research
 #+weight: 100
+#+draft: true
 
-#+begin_abstract
 My research is in algebraic combinatorics with a focus on diagonal harmonics and their generalizations.
-#+end_abstract
