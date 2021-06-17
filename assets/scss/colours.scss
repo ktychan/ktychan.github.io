@@ -17,9 +17,18 @@ $colour-danger: #f44336;
   }
 
   nav {
-    background-color: $colour-main;
     a {
       color: $colour-light-shade;
+    }
+  }
+
+  .nav {
+    background-color: $colour-main;
+  }
+
+  .nav-mobile {
+    .nav-mobile-item {
+      background-color: $colour-main;
     }
   }
 
@@ -35,9 +44,18 @@ $colour-danger: #f44336;
   }
 
   nav {
-    background-color: $colour-main;
     a {
       color: $colour-dark-shade;
+    }
+  }
+
+  .nav {
+    background-color: $colour-main;
+  }
+
+  .nav-mobile {
+    .nav-mobile-item {
+      background-color: $colour-main;
     }
   }
 

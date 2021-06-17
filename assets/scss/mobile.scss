@@ -6,8 +6,54 @@ $navbar-height: 0px;
     display: none;
   }
 
+  .nav-mobile {
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    padding: 10%;
+
+    button {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .logo {
+      font-weight: 400;
+    }
+
+    #nav-mobile-items {
+      display: none;
+    }
+
+    .nav-mobile-item {
+      border: 1px grey solid;
+      padding: 10%;
+    }
+
+    a {
+      font-family: $font-family-heading;
+      font-weight: 300;
+
+      text-decoration: none;
+
+      line-height: $navbar-height;
+      height: $navbar-height;
+      margin-left: 1rem;
+      font-size: 16pt;
+
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
   main {
-    top: $navbar-height;
+    top: 0;
 
     .container {
       width: 95%;

@@ -37,7 +37,7 @@
 
     <!-- nav -->
     {{ block "navbar" . }}
-    <nav>
+    <nav class="nav">
       <a href="/" class="logo"> {{ .Site.Title }} </a>
 
       {{ range .Site.Home.CurrentSection.Pages }}
@@ -53,10 +53,47 @@
     </nav>
     {{ end }}
 
+    <nav class="nav-mobile">
+      <button onclick="toggleMobileNav()">
+        <img alt="" src="/menu_black_24dp.svg" />
+      </button>
+
+      <div id="nav-mobile-items">
+        <div class="nav-mobile-item">
+          <a href="/" class="logo"> {{ .Site.Title }} </a>
+        </div>
+        {{ range .Site.Home.CurrentSection.Pages }}
+        <!-- prettier-ignore -->
+        <div class="nav-mobile-item">
+          <a href="{{.Permalink }}">
+            {{ if .Params.short_title  }}
+            {{ .Params.short_title }}
+            {{ else}}
+            {{ .Title }}
+            {{ end }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </nav>
+
     <!-- include math in every page -->
     {{ partial "mathjax.html" . }}
 
     <!-- include syntax highlighting in everypage -->
     {{ partial "highlighjs.html" . }}
+
+    <!-- toggle mobile menu -->
+    <script>
+      function toggleMobileNav() {
+        let dom = document.getElementById("nav-mobile-items");
+
+        if ((dom.style.display == "none") | (dom.style.display == "")) {
+          dom.style.display = "block";
+        } else {
+          dom.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

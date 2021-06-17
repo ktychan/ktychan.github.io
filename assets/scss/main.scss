@@ -27,7 +27,11 @@ main {
   }
 }
 
-nav {
+.nav-mobile {
+  display: none;
+}
+
+.nav {
   position: fixed;
   top: 0px;
   margin: 0;
