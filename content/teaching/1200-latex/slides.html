@@ -183,7 +183,7 @@
             <pre>
               <code class="lang-latex" data-trim data-line-numbers>
                 \documentclass{amsart}
-                
+
                 \begin{document}
                 \section{Introduction}
                 This is Section 1
@@ -483,28 +483,56 @@
             </p>
           </section>
 
-          <!-- roll your own environment -->
+          <!-- lists -->
           <section class="slide">
             <p>
-              Questions (optional)<span style="float: right">(text mode)</span>
+              Lists (numbered) <span style="float: right">(text mode)</span>
+            </p>
+            <p>
+              Use <code style="color: green">enumerate</code> environment for
+              numbered lists. Each item must be prefixed with
+              <code style="color: green">\item</code> command.
             </p>
 
-            <p>Add to your preamble</p>
             <pre>
               <code class="lang-latex" data-trim data-line-numbers>
-                \newtheorem{question}{Question}
+                \begin{enumerate}
+                \item Look there's a number to my left!
+                \item Another one!
+                \end{enumerate}
               </code>
             </pre>
 
-            <p>Then just use it in your assignments to type up the question.</p>
+            <p>Output:</p>
+            <ol>
+              <li>Look there's a number to my left!</li>
+              <li>Another one!</li>
+            </ol>
+          </section>
+
+          <section class="slide">
+            <p>Lists (bullets) <span style="float: right">(text mode)</span></p>
+
+            <p>
+              Use <code style="color: green">itemize</code> environment for
+              unnumbered lists. Each item must be prefixed with
+              <code style="color: green">\item</code> command.
+            </p>
+
             <pre>
               <code class="lang-latex" data-trim data-line-numbers>
-                \begin{question}
-                  You are on an island and there are three crates of fruit that
-                  have washed up in front of you. ...
-                \end{question}
+                \begin{itemize}
+                \item This item has no number.
+                \item Just a lonely bullet.
+                \end{itemize}
               </code>
             </pre>
+
+            <p>Output:</p>
+            <ul>
+              <li>This item has no number.</li>
+              <li>Just a lonely bullet.</li>
+            </ul>
           </section>
 
           <!-- Typical homework solution -->
@@ -527,6 +555,30 @@
                 \begin{proof}
                   Part (1) is ...
                 \end{proof}
+              </code>
+            </pre>
+          </section>
+
+          <!-- roll your own environment -->
+          <section class="slide">
+            <p>
+              Questions (optional)<span style="float: right">(text mode)</span>
+            </p>
+
+            <p>Add to your preamble</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \newtheorem{question}{Question}
+              </code>
+            </pre>
+
+            <p>Then just use it in your assignments to type up the question.</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{question}
+                  You are on an island and there are three crates of fruit that
+                  have washed up in front of you. ...
+                \end{question}
               </code>
             </pre>
           </section>

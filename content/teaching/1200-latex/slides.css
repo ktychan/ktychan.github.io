@@ -11,7 +11,7 @@
 
 /* colors */
 .warning {
-    color: olive !important;
+  color: olive !important;
 }
 
 /* general text sizes */
@@ -20,11 +20,11 @@ p {
 }
 
 .slides .example {
-    border: 1px solid gray;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  border: 1px solid gray;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* title page */
@@ -111,7 +111,8 @@ p {
   font-size: 24pt;
 }
 
-.slide ul {
+.slide ul,
+.slide ol {
   padding-left: 5vw;
   padding-right: 5vw;
   //  list-style-type: none;
