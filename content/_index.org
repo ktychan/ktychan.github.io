@@ -1,9 +1,15 @@
 #+title: Hello!
-#+date: 2021-06-05
+#+date: 2021-09-14
 
 * Contacts
 - Email: ktychan 😄 yorku 🍁 ca
 - Office: [[https://goo.gl/maps/ZP8M6yVMYWjFfMSn9][DB 2037]]
 
-* Math 1200 (Summer 2021)
+In the Fall 2021 semester, I am TA'ing Math 1200 (Sections A and C) and Math 3021. 
+
+* Math 1200 (Fall 2021)
+
+I have office hours (Wed. 1pm to 3pm) on Zoom. For details, see [[https://eclass.yorku.ca/][eClass]].
+
 For LaTeX tutorial, click [[https://ktychan.gitlab.io/teaching/1200-latex/][here]].
+
