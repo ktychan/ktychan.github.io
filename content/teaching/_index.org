@@ -1,4 +1,2 @@
 #+title: Teaching
 #+weight: 200
-
-In this section, you will find all my teaching-related materials.

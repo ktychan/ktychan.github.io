@@ -1,9 +1,27 @@
 #+title: Hello!
-#+date: 2021-09-14
+#+date: 2022-04-09
 
-* Contacts
-- Email: ktychan 😄 yorku 🍁 ca
-- Office: [[https://goo.gl/maps/ZP8M6yVMYWjFfMSn9][DB 2037]]
+#+begin_export html
+<section id="abstract">
+  <div id="bio">
+    <p style="margin-bottom: 1em">
+      <emph style="font-size: x-large">Hallo!</emph> I am a Ph.D. candidate at
+      York University. My research focuses on algebraic and enumerative
+      combinatorics.
+    </p>
+
+    <h2>Contacts</h2>
+    <ul>
+      <li>Email: <code>ktychan 😄 yorku 🍁 ca</code></li>
+      <li>Office: <a href="https://goo.gl/maps/ZP8M6yVMYWjFfMSn9">DB 2037</a></li>
+    </ul>
+  </div>
+
+  <div id="profile-picture">
+    <img src="/profile.jpeg" />
+  </div>
+</section>
+#+end_export
 
 * Math 1014 (Winter 2022)
 See [[https://eclass.yorku.ca/course/view.php?id=45617][eClass]] for details.
