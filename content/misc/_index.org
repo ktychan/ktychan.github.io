@@ -2,6 +2,4 @@
 #+short_title: Misc
 #+weight: 10000
 
-There's nothing here yet.
-
-See [[mathlab_summer22.pdf][here for MathLab Summer 2022 schedule]].
+- [[mathlab][MathLab]]

@@ -23,5 +23,3 @@
 </section>
 #+end_export
 
-* Math 1014 (Winter 2022)
-See [[https://eclass.yorku.ca/course/view.php?id=45617][eClass]] for details.

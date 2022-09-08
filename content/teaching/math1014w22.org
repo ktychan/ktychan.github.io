@@ -1,4 +1,0 @@
-#+title: Math 1014O (Winter 2022)
-#+weight: 202
-
-See [[https://eclass.yorku.ca/course/view.php?id=45617][eClass]] for details.
