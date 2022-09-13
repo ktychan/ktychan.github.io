@@ -2,8 +2,5 @@
 #+short_title: Misc
 #+weight: 10000
 
-MathLab is an walk-in, Q&A style, and FREE(!) tutoring service offered by the Department of Mathematics and Statistics for students enrolled in first or second year mathematics or statistics course.
-
-I am the coordinator for MathLab for the Fall 2022 term.
-
-See [[mathlab_F22.pdf][here for MathLab Fall 2022 schedule]].
+- Schedules PDF: [[mathlab_F22.pdf]].
+- Students Guide: [[mathlab_student_guide.pdf]].
