@@ -1,6 +1,0 @@
-#+title: Math/Stats Lab
-#+short_title: Misc
-#+weight: 10000
-
-- Schedules PDF: [[mathlab_F22.pdf]].
-- Students Guide: [[mathlab_student_guide.pdf]].
