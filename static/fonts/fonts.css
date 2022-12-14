@@ -1,0 +1,27 @@
+@font-face {
+    font-family: OpenSans;
+    font-style: normal;
+    font-stretch: 1% 500%;
+    src: url("OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-style: italic;
+    font-stretch: 1% 500%;
+    src: url("OpenSans-Italic-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: RobotoFlex;
+    font-style: normal;
+    font-stretch: 1% 500%;
+    src: url("RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: RobotoFlex;
+    font-style: italic;
+    font-stretch: 1% 500%;
+    src: url("RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
+}
