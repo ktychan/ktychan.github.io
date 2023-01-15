@@ -11,6 +11,7 @@
 ### hugo
 # these two are produced by running 'hugo' in CLI
 #
+.hugo_build.lock
 public
 resources
 
