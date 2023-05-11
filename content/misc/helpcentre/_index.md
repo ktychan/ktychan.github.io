@@ -10,6 +10,6 @@ Math & Stats **Help Centre and Study Hub** (formerly Math & Stats Lab) is a free
 
 ## Student Resources (for Summer 2023)
 
--   Schedules PDF: [mathlab_S23.pdf](mathlab_S23.pdf)
+-   Schedules PDF: [helpcentre_S23.pdf](helpcentre_S23.pdf)
 -   Students Guide: [student_guide.pdf](mathlab_student_guide.pdf)
 -   Students Feedback Form: [https://forms.gle/CwdbdQA6VP9MqiUr6](https://forms.gle/CwdbdQA6VP9MqiUr6)
