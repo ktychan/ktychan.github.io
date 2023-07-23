@@ -18,7 +18,7 @@
   </div>
 
   <div id="profile-picture">
-    <img src="/profile.jpeg" />
+    <img src="/fpsac_2023.png" />
   </div>
 </section>
 #+end_export
