@@ -9,6 +9,9 @@
       York University. My research focuses on algebraic and enumerative
       combinatorics.
     </p>
+    <p>
+      I am currently on the job market.
+    </p>
 
     <h2>Contacts</h2>
     <ul>
