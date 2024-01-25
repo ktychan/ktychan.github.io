@@ -1,13 +1,11 @@
 #+title: Hello!
-#+date: 2023-07-23
+#+date: 2024-01-24
 
 #+begin_export html
 <section id="abstract">
   <div id="bio">
     <p style="margin-bottom: 1em">
-      <emph style="font-size: x-large">Hallo!</emph> I am a Ph.D. candidate at
-      York University. My research focuses on algebraic and enumerative
-      combinatorics.
+      <emph style="font-size: x-large">Hallo!</emph> I am a mathematician with a research focuses on algebraic and enumerative combinatorics.
     </p>
     <p>
       I am currently on the job market.
@@ -16,7 +14,7 @@
     <h2>Contacts</h2>
     <ul>
       <li>Email: <code>ktychan 😄 yorku 🍁 ca</code></li>
-      <li>Office: <a href="https://goo.gl/maps/ZP8M6yVMYWjFfMSn9">DB 2037</a></li>
+      <li>Office: <a href="https://goo.gl/maps/ZP8M6yVMYWjFfMSn9">Ross N522</a></li>
     </ul>
   </div>
 

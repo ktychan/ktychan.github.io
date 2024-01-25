@@ -3,8 +3,9 @@
 
 ** 2023 - 2024
 
-- Math 1013 (Section F) --- Applied Calculus I
-- Math 1200 (Section O) --- Problems, Conjectures and Proofs
+- Math 1013 (Fall, Section F) --- Applied Calculus I
+- Math 1014 (Winter, Section O) --- Applied Calculus II
+- Math 1200 (Winter Section O) --- Problems, Conjectures and Proofs
 
 ** 2021 - 2022
 
