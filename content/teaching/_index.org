@@ -1,13 +1,17 @@
 #+title: Teaching
 #+weight: 200
 
-** 2023 - 2024
+** 2024 - 2025
+
+TBA
+
+** 2023 - 2024 (York University)
 
 - Math 1013 (Fall, Section F) --- Applied Calculus I
 - Math 1014 (Winter, Section O) --- Applied Calculus II
 - Math 1200 (Winter Section O) --- Problems, Conjectures and Proofs
 
-** 2021 - 2022
+** 2021 - 2022 (York University)
 
 - Math 1014 (Section O) --- Applied Calculus II
 

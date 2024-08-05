@@ -1,20 +1,19 @@
 #+title: Hello!
-#+date: 2024-01-24
+#+date: 2024-08-05
 
 #+begin_export html
 <section id="abstract">
   <div id="bio">
+    <p>Assistant Professor, <a href="https://www.uwo.ca/">University of Western University</a></p>
+
     <p style="margin-bottom: 1em">
-      <emph style="font-size: x-large">Hallo!</emph> I am a mathematician with a research focuses on algebraic and enumerative combinatorics.
-    </p>
-    <p>
-      I am currently on the job market.
+      <emph style="font-size: x-large">Hello!</emph> I am a mathematician with a research focuses on undergraduate mathematics education and algebraic and enumerative combinatorics.
     </p>
 
     <h2>Contacts</h2>
     <ul>
-      <li>Email: <code>ktychan 😄 yorku 🍁 ca</code></li>
-      <li>Office: <a href="https://goo.gl/maps/ZP8M6yVMYWjFfMSn9">Ross N522</a></li>
+      <li>Email: <code>kchan773 😄 uwo 🍁 ca</code></li>
+      <li>Office: <a href="https://maps.app.goo.gl/Hy29mpopZ9TURr7h8">Middlesex College Room 112</a></li>
     </ul>
   </div>
 
