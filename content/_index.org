@@ -6,13 +6,13 @@
   <div id="bio">
 
     <p style="margin-bottom: 1em">
-      <emph style="font-size: x-large">Hello!</emph> I am a mathematician with a research focuses on undergraduate mathematics education and algebraic and enumerative combinatorics.
+      <emph style="font-size: x-large">Hello!</emph> I am a mathematician with a research focus in algebraic and enumerative combinatorics and undergraduate mathematics education. 
     </p>
 
     <h2>Contacts</h2>
     <ul>
       <li>Email: <code>kchan773 😄 uwo 🍁 ca</code></li>
-      <li>Office: <a href="https://maps.app.goo.gl/Hy29mpopZ9TURr7h8">Middlesex College Room 112</a></li>
+      <li>Office: <a href="https://maps.app.goo.gl/Hy29mpopZ9TURr7h8">Middlesex College Room 112</a> </li>
     </ul>
   </div>
 

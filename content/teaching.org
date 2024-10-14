@@ -3,7 +3,10 @@
 
 ** 2024 - 2025
 
-to be updated
+- Calc 1000A (section 002) -- Calculus I
+- ApplMath 1021B (section 001) -- Calculus & Probability with Biological Applications
+- Math 1228B (tutorial sections 005, 006, 007) -- Methods of Finite Mathematics
+- Math 1229B (tutorial sections 005, 006, 007) -- Methods of Matrix Algebra
 
 ** Courses taught at York University
 
