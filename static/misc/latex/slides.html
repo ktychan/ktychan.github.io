@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>LaTeX tutorial</title>
+    <link rel="stylesheet" href="./slides.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides debug">
+        <!-- title page -->
+        <section class="title-page">
+          <div class="top">
+            <h1>\(\LaTeX\) Workshop</h1>
+            <h2>a guide on typesetting everything math</h2>
+          </div>
+
+          <div class="middle">
+            <ul class="author">
+              <li>Kelvin Chan</li>
+              <li>&nbsp;</li>
+              <li>Western University</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- LaTeX basics -->
+        <section class="container">
+          <div class="header">
+            <h1>\(\LaTeX\) Basics</h1>
+          </div>
+
+          <!-- workflow -->
+          <section class="slide">
+            <p>LaTeX is a special syntax built on plain text that produced math from a collection of commands. It is widely used among mathematicians to publish anything ... papers, presentations, theses, lecture notes, books, etc. </p>
+
+            <p>How does one work with LaTeX?</p>
+            <ul>
+              <li class="fragment"> 
+                type plain text and commands into a text editor
+              </li>
+              <li class="fragment"> 
+                press the compile button (a few times)
+              </li>
+              <li class="fragment"> 
+                wait ...
+              </li>
+              <li class="fragment"> 
+                tada! PDF! 
+              </li>
+              <li class="fragment"> 
+                repeat
+              </li>
+            </ul>
+
+            <p class="fragment">
+            The process of turning a <code>.tex</code> into a <code>.pdf</code> is typically called typesetting or compilation.
+            </p>
+          </section>
+
+          <!-- syntax -->
+          <section class="slide">
+            <p>Syntax consists of some special purpose symbols</p>
+            <center>
+              <code>% \ [ ] { } # $ _ ^ & ~</code>
+            </center>
+
+            <p>&nbsp</p>
+
+            <ul>
+              <li class="fragment">
+                the <code>%</code> starts a comment that gets ignored
+                <pre>
+                  <code class="lang-latex" data-trim data-line-numbers>
+                    This shows up in the output.  % gets ignored :(
+                  </code>
+                </pre>
+              </li>
+              <li class="fragment">
+                the <code>\</code> starts a command that does special things
+                <pre>
+                  <code class="lang-latex" data-trim data-line-numbers>
+                    \commandname[option]{argument}
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </section>
+
+          <!-- sections -->
+          <section class="slide">
+            <p>Anatomy of a <code>.tex</code> file</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \documentclass{amsart}
+                \begin{document}
+                  hello!
+                \end{document}
+              </code>
+            </pre>
+            <ul>
+              <li>lines 2 to 4 make up the <em>document body</em></li>
+              <li>
+                anything above the document body is called <em>preamble</em>
+              </li>
+              <li>anything after the document body gets ignored</li>
+            </ul>
+          </section>
+
+          <!-- packages -->
+          <section class="slide">
+            <p>Packages</p>
+            <p>
+              Many \(\LaTeX\) features come in packages. To activate them, put
+              <code style="color: green">usepackage</code> commands in the
+              <em>preamble</em>.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \usepackage[margin=1in]{geometry}
+              </code>
+            </pre>
+
+            <p>&nbsp;</p>
+            <p>
+              Note <code style="color: green">usepackage</code> commands placed
+              inside document body will result in errors.
+            </p>
+          </section>
+
+          <!-- structure -->
+          <section class="slide">
+            <p>Giving your document some structure</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \documentclass{amsart}
+
+                \begin{document}
+                \section{Introduction}
+                This is Section 1
+                \subsection{Definitions}
+                This is Section 1.1.
+                This will be in the same line as above.
+
+                This is a new line!
+                \end{document}
+              </code>
+            </pre>
+
+            <p>A blank line starts a new paragraph!</p>
+          </section>
+
+          <!-- basic template -->
+          <section class="slide">
+            <p>A really basic template.</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+\documentclass[12pt,letterpaper,reqno]{amsart}
+
+\author{Your Name}
+\title{title}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% start writing here!
+
+
+% don't write past this line!
+
+\end{document}
+              </code>
+            </pre>
+          </section>
+
+          <!-- activity -->
+        </section>
+
+        <!-- text and mathematics -->
+        <section class="container">
+          <div class="header"><h1>Mathematics</h1></div>
+
+          <!-- commands for modes -->
+          <section class="slide">
+            <p>
+              \(\LaTeX\) distinguishes math and text by special markers that
+              start and end <em>math</em>.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                Inline math: $x = 3$.
+                Display math: \[ x = 3. \] This is in a new line.
+              </code>
+            </pre>
+
+            <!-- prettier-ignore -->
+            <p class="example">
+              Inline math: $x = 3$.
+              Display math: \[ x = 3. \] This is in a new line.
+            </p>
+          </section>
+
+          <!-- an example of good text. -->
+          <section class="slide">
+            <p>Compare the readibility of the following.</p>
+
+            <p class="example">
+              The absolute value function $|x|$ can be defined piecewisely by
+              assigning $|x| = x$ when $x \ge 0$, and $|x|=-x$ when $x \lt 0$.
+            </p>
+
+            <p class="example">
+              The absolute value function $|x|$ can be defined as \[ |x| =
+              \begin{cases} x, &\textrm{if } x \ge 0, \\ -x, &\textrm{if } x \lt
+              0. \end{cases} \]
+            </p>
+
+            <p>Which one do you prefer?</p>
+          </section>
+
+          <!-- spacing warning -->
+          <section class="slide">
+            <p>Warning! The following doesn't output what you think it does.</p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \[
+                  x=3
+                  and
+                  x=4.
+                \]
+              </code>
+            </pre>
+
+            <p>The above code ouputs the following.</p>
+            <p class="example">\[ x=3 and x = 4. \]</p>
+          </section>
+
+          <!-- commands for symbols -->
+          <section class="slide">
+            <p>Commands for symbols</p>
+
+            <p>Some examples</p>
+
+            <ul>
+              <li>
+                operations
+                <code
+                  class="tex2jax_ignore"
+                  style="color: green; display: block; text-align: center"
+                  >\times \div \ge \sqrt{n} \frac{a}{b}
+                </code>
+              </li>
+              <li>
+                Greek letters
+                <code
+                  class="tex2jax_ignore"
+                  style="color: green; display: block; text-align: center"
+                  >\alpha \beta \gamma ...</code
+                >
+              </li>
+              <li>
+                brackets
+                <code
+                  class="tex2jax_ignore"
+                  style="color: green; display: block; text-align: center"
+                  >(...) \{...\} [...]</code
+                >
+              </li>
+              <li>
+                subscript and superscripts
+                <code
+                  class="tex2jax_ignore"
+                  style="color: green; display: block; text-align: center"
+                  >x_{1,2} x^{3} \alpha_{0}^{2^{2}}</code
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- detexify -->
+          <section class="slide">
+            <p>
+              <a
+                href="http://detexify.kirelabs.org/classify.html"
+                target="_blank"
+                >Detexify</a
+              >
+              (free!) is your friend to find the command for the symbol you
+              want.
+            </p>
+
+            <center>
+              <a
+                href="http://detexify.kirelabs.org/classify.html"
+                target="_blank"
+                ><img alt="" src="detexify_qr.png"
+              /></a>
+            </center>
+            <p>It works amazingly well on mobile.</p>
+          </section>
+        </section>
+
+        <!-- Commands -->
+        <section class="container">
+          <div class="header"><h1>Custom Commands</h1></div>
+
+          <section class="slide">
+            <p>Custom commands are useful for making repetitive tasks easier. </p>
+
+            <p>
+            For example, \(\mathbb{R}\) is produced by the command 
+            <code class="tex2jax_ignore" style="color: green">\mathbb{R}</code>.
+            </p>
+
+            <p>
+            If we use it very often, why not shorten it to just 
+            <code class="tex2jax_ignore" style="color: green">\RR</code> by writing the following somewhere in the preamble?
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \newcommand{\RR}{\mathbb{R}}
+              </code>
+            </pre>
+            <p>
+
+          </section>
+
+          <section class="slide">
+            <p>We can also redefine existing commands.</p>
+
+            <p>
+            For example, the <code class="tex2jax_ignore" style="color: green">\vec{AB}</code> only produces a short arrow \(\vec{AB}\). However, the command <code class="tex2jax_ignore" style="color: green">\overrightarrow{ABCDE}</code> produces \(\overrightarrow{ABCDE}\). 
+            </p>
+
+            <p>
+            Instead of replacing all <code>vec</code> by <code>overrightarrow</code>, we can place in the preamble the following.
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \renewcommand{\vec}{\overrightarrow}
+              </code>
+            </pre>
+            </p>
+          </section>
+
+          <section class="slide">
+            <p>Custom commands can take arguments.</p>
+
+            <p>
+            Let's say, we use the quadratic form very often. So we place in the preamble
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \newcommand{\quadformula}[3]{
+                  \frac{
+                    -{#2} \pm \sqrt{ {#2}^{2} - 4 {#1} {#3} }
+                  }{
+                    2{#1}
+                  }
+                }
+              </code>
+            </pre>
+            </p>
+
+            <p>
+            Now <code class="tex2jax_ignore" style="color: green">\quadformula{a}{b}{c}</code> produces 
+            \[ \frac{ -b \pm \sqrt{ {b}^{2} - 4ac } }{2a} \]
+            </p>
+          </section>
+        </section>
+
+        <!-- Environments -->
+        <section class="container">
+          <div class="header"><h1>Environments</h1></div>
+
+          <section class="slide">
+            <p>
+              Syntax:
+              <code class="tex2jax_ignore" style="color: green">
+                \begin{blah} ... \end{blah}
+              </code>
+            </p>
+
+            <p>&nbsp;</p>
+            <p>You have already met some of them</p>
+            <ul>
+              <li>
+                <code class="tex2jax_ignore" style="color: green"
+                  >\begin{document} ... \end{document}</code
+                >
+              </li>
+              <li>
+                <code class="tex2jax_ignore" style="color: green">$...$</code>
+              </li>
+              <li>
+                <code class="tex2jax_ignore" style="color: green">\[...\]</code>
+              </li>
+            </ul>
+          </section>
+
+          <!-- equations with numbers -->
+          <section class="slide">
+            <p>
+              Equations with numbers
+              <span style="float: right">(math mode)</span>
+            </p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{align}
+                  (x+y)^{n+1} &amp;= (x+y) (x+y)^{n}  \nonumber \\
+                              &amp;= (x+y) \sum_{k=1}^{n} \binom{n}{k} x^{k}.
+                \end{align}
+              </code>
+            </pre>
+
+            <!-- prettier-ignore -->
+            <p>
+              \[
+                \begin{align}
+                  (x+y)^{n+1} &amp;= (x+y) (x+y)^{n}  \nonumber \\
+                              &amp;= (x+y) \sum_{k=1}^{n} \binom{n}{k} x^{k}.
+                \end{align}
+              \]
+            </p>
+
+            <p>
+              Notice <code style="color: green">\\</code> is necessary to make a
+              new line.
+            </p>
+          </section>
+
+          <!-- equations -->
+          <section class="slide">
+            <p>
+              Equations without numbers
+              <span style="float: right">(math mode)</span>
+            </p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{align*}
+                  (x+y)^{n+1} &amp;= (x+y) (x+y)^{n} \\
+                              &amp;= (x+y) \sum_{k=1}^{n} \binom{n}{k} x^{k}.
+                \end{align*}
+              </code>
+            </pre>
+
+            <!-- prettier-ignore -->
+            <p>
+              \[
+                \begin{align*}
+                  (x+y)^{n+1} &amp;= (x+y) (x+y)^{n} \\
+                              &amp;= (x+y) \sum_{k=1}^{n} \binom{n}{k} x^{k}.
+                \end{align*}
+              \]
+            </p>
+
+            <p>
+              Notice the little <code style="color: green">*</code> disables
+              numbering.
+            </p>
+          </section>
+
+          <!-- the proof environment -->
+          <section class="slide">
+            <p>Proofs <span style="float: right">(text mode)</span></p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{proof}
+                Let $\epsilon \gt 0$. Choose $\delta = \sqrt{\epsilon}$.
+                Then...
+                \end{proof}
+              </code>
+            </pre>
+            <p class="example proof">
+              Let $\epsilon \gt 0$. Choose $\delta = \sqrt{\epsilon}$. Then...
+            </p>
+          </section>
+
+          <!-- lists -->
+          <section class="slide">
+            <p>
+              Lists (numbered) <span style="float: right">(text mode)</span>
+            </p>
+            <p>
+              Use <code style="color: green">enumerate</code> environment for
+              numbered lists. Each item must be prefixed with
+              <code style="color: green">\item</code> command.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{enumerate}
+                \item Look there's a number to my left!
+                \item Another one!
+                \end{enumerate}
+              </code>
+            </pre>
+
+            <p>Output:</p>
+            <ol>
+              <li>Look there's a number to my left!</li>
+              <li>Another one!</li>
+            </ol>
+          </section>
+
+          <section class="slide">
+            <p>Lists (bullets) <span style="float: right">(text mode)</span></p>
+
+            <p>
+              Use <code style="color: green">itemize</code> environment for
+              unnumbered lists. Each item must be prefixed with
+              <code style="color: green">\item</code> command.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{itemize}
+                \item This item has no number.
+                \item Just a lonely bullet.
+                \end{itemize}
+              </code>
+            </pre>
+
+            <p>Output:</p>
+            <ul>
+              <li>This item has no number.</li>
+              <li>Just a lonely bullet.</li>
+            </ul>
+          </section>
+
+
+          <!-- matricies -->
+          <section class="slide">
+            <p>
+            Matricies are created by <code>matrix</code>, <code>bmatrix</code> or <code>pmatrix</code> environments.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{bmatrix}
+                  a & b & c \\
+                  e & f & g \\
+                  h & i & j
+                \end{bmatrix}
+              </code>
+            </pre>
+
+            <p>
+            \[ 
+            \begin{bmatrix}
+            a & b & c \\
+            e & f & g \\
+            h & i & j
+            \end{bmatrix}
+            \]
+            </p>
+          </section>
+
+          <!-- graphics -->
+          <section class="slide">
+            <p>
+            <code>tikz</code> and <code>pgfplots</code> are powerful packages for producing graphics. 
+            </p>
+
+            <p> Using tikz feels a bit like drawing graphics by describing every single stroke. </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{tikzpicture}
+                  \draw (0,0) -- (2,3);
+                  \draw plot[domain=-1:1] (\x, \x*\x);
+                \end{tikzpicture}
+              </code>
+            </pre>
+
+            <p>
+            Learn tikz by asking AI to generate pictures for you.
+            </p>
+          </section>
+
+          <!-- roll your own environment -->
+          <section class="slide">
+            <p>
+              Questions (optional)<span style="float: right">(text mode)</span>
+            </p>
+
+            <p>Add to your preamble</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \newtheorem{question}{Question}
+              </code>
+            </pre>
+
+            <p>Then just use it in your assignments to type up the question.</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{question}
+                  You are on an island and there are three crates of fruit that
+                  have washed up in front of you. ...
+                \end{question}
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <!-- advanced topics -->
+        <section class="container">
+          <div class="header"><h1>Advanced topics</h1></div>
+
+          <!-- spacing -->
+          <section class="slide">
+            <p>
+              \(\LaTeX\) has its own spacing rule and most likely will ignore
+              spaces in your <code>.tex</code> file. The precise rules are hard
+              to describe. But here is the gist.
+            </p>
+
+            <p>&nbsp;</p>
+            <p>Spacing <span style="float: right">(text mode)</span></p>
+            <ul>
+              <li>only one space is preserved between characters</li>
+              <li>new line counts as a single space</li>
+              <li>a blank line or starts a new paragraph</li>
+              <li>
+                <code class="tex2jax-ignore" style="color: green">\\</code>
+                forces a line break
+              </li>
+            </ul>
+          </section>
+
+          <!-- spacing -->
+          <section class="slide">
+            <p>Spacing <span style="float: right">(math mode)</span></p>
+
+            <ul>
+              <li>blank lines sometime give you error</li>
+              <li>all white spaces between non-commands are ignored</li>
+            </ul>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \[
+                  x=3
+                  \textrm{ and }
+                  x=4.
+                \]
+              </code>
+            </pre>
+
+            <!-- prettier-ignore -->
+            <p>\[ x=3 \textrm{ and } x = 4. \]</p>
+          </section>
+
+          <section class="slide">
+            <p>Styling</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                % text mode
+                normal:  \textrm{very normal}.
+                bold:    \textbf{look at me!}.
+                italic:  \textit{something that stands out}.
+
+                % math mode
+                normal:   $\mathrm{very normal}$.
+                bold:     $\mathbf{look at me!}$.
+                italic:   $\mathit{something that stands out important}$.
+
+                % fonts
+                blackboard:  $\mathbb{R}$
+                caligraphy:  $\mathcal{S}$
+              </code>
+            </pre>
+          </section>
+
+          <!-- cross-referencing -->
+          <section class="slide">
+            <p>Cross-referencing</p>
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                \begin{align}
+                  (x+y)^{n+1} &amp;= (x+y) (x+y)^{n} \label{eq:1}
+                \end{align}
+
+                The above is Equation~\eqref{eq:1}.
+              </code>
+            </pre>
+
+            <p>
+              \begin{align} (x+y)^{n+1} &amp;= (x+y) (x+y)^{n} \label{eq:1}
+              \end{align}
+            </p>
+            <p>The above is Equation&nbsp;\eqref{eq:1}.</p>
+          </section>
+
+          <!-- table -->
+          <section class="slide">
+            <p>Table</p>
+            <p>&nbsp;</p>
+            <p>They are notorisely complicated.</p>
+            <p>
+              Use
+              <a href="https://www.tablesgenerator.com/" target="_blank"
+                >tablesgenerator.com</a
+              >
+              (free!) instead.
+            </p>
+          </section>
+
+          <!-- graphics -->
+          <section class="slide">
+            <p>Graphics</p>
+            <p>
+              Put
+              <code class="tex2jax_ignore" style="color: green"
+                >\usepackage{graphicx,float}</code
+              >
+              in the preamble which provides
+              <code class="tex2jax_ignore" style="color: green"
+                >includegraphics</code
+              >
+              command.
+            </p>
+
+            <pre>
+              <code class="lang-latex" data-trim data-line-numbers>
+                % inside document body
+                \begin{figure}[H]
+                \centering
+                \includegraphics{path/to/your_image.png}  % must be valid path
+                \caption{Your caption}
+                \label{fig:your_figure}
+                \end{figure}
+              </code>
+            </pre>
+
+            <p style="font-size: 16pt; color: grey">
+              Warning: This feature is disabled on my webiste.
+            </p>
+          </section>
+        </section>
+
+        <!-- the end -->
+        <section class="container">
+          <div class="header">
+            <h1>Lastly...</h1>
+          </div>
+
+          <!-- resources -->
+          <section class="slide">
+            <p>
+              Try out
+              <a target="_blank" href="https://overleaf.com">Overleaf</a> for
+              typesetting your own homework.
+            </p>
+            <p>To learn more, check out</p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.latex-project.org/"
+                  >latex-project.org</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.learnlatex.org/"
+                  >learnlatex.org</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.overleaf.com/learn"
+                  >overleaf.com/learn</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <!-- load javascripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+
+    <!-- my stuff -->
+    <script src="./slides-config.js"></script>
+  </body>
+</html>
