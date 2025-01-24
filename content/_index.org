@@ -1,5 +1,5 @@
 #+title: Hello!
-#+date: 2024-08-05
+#+date: 2025-01-24
 
 #+begin_export html
 <section id="abstract">
@@ -11,7 +11,7 @@
 
     <h2>Contacts</h2>
     <ul>
-      <li>Email: <code>kchan773 😄 uwo 🍁 ca</code></li>
+      <li>Email: <code>kchan773@uwo.ca</code></li>
       <li>Office: <a href="https://maps.app.goo.gl/Hy29mpopZ9TURr7h8">Middlesex College Room 112</a> </li>
     </ul>
   </div>
