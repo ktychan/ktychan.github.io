@@ -1,4 +1,10 @@
 #+title: Research
 #+weight: 300
 
-This page is being updated.
+My research interest is in algebraic combinatorics and the combinatorics of coinvariant theory.
+
+Publications
+
+- Bergeron, N., Chan, K., Soltani, F., & Zabrocki, M. (2023). Quasisymmetric harmonics of the exterior algebra. Canadian Mathematical Bulletin, 66(3), 997-1013.
+
+
