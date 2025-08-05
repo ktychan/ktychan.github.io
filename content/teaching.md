@@ -5,7 +5,7 @@ weight: 200
 
 ## 2025 - 2026
 
-- Calc 1000A (section 004 and 005) -- Calculus I
+- Calc 1000A (sections 004 and 005) -- Calculus I
 - ApplMath 1021B (sections 001 and 002) -- Calculus & Probability with Biological Applications
 - Calc 1501B (section 002) -- Calculus II
 
