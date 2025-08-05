@@ -3,6 +3,8 @@ title: Teaching
 weight: 200
 ---
 
+If you are a student looking for course website, please visit [owl.uwo.ca](https://owl.uwo.ca).
+
 ## 2025 - 2026
 
 - Calc 1000A (sections 004 and 005) -- Calculus I
