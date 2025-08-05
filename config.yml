@@ -1,0 +1,7 @@
+baseURL: "https://ktychan.github.io"
+languageCode: "en-ca"
+title: "Kelvin Chan"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
